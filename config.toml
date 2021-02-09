@@ -1,0 +1,90 @@
+baseURL = "https://room-decoration-idea.vercel.app/"
+languageCode = "id"
+title = "Find your Room Decoration Idea"
+theme = "sleek"
+sectionPagesMenu = "main"
+
+[taxonomies]
+  tag = ""
+  category = ""
+
+[permalinks]
+  post = ":slug"
+
+[params]
+  description = "Inspiring room decoration idea in the world"
+  topdescription = "Inspiring room decoration idea in the world"
+  toptitle = "Find your Room Decoration Idea"
+  contentBackgroundColor = "#fff"
+  contentLinkColor = "#007bff"
+  contentLinkHoverColor = "#0056b3"
+  contentTextColor = "#212529"
+  cookieConsent = false
+  customBlockquoteStyle = true
+  customCodeStyle = true
+  customDateFormat = "Jan 2, 2006"
+  faviconMsApplicationTileColor = "#da532c"
+  faviconSafariPinnedTabColor = "#5bbad5"
+  faviconThemeColor = "#ffffff"
+  googleAnalytics = ""
+  includeBootstrapJs = true
+  navbarBackgroundColor = "#212529"
+  navbarLinkColor = "rgba(255, 255, 255, 0.75)"
+  navbarLinkHoverColor = "rgba(255, 255, 255, 1)"
+  showPostSummary = false
+  wrapperMaxWidth = ""
+  mainSections = ["post"]
+
+[menu]
+  [[menu.pages]]
+  name = "Contact"
+  url = "/pages/contact"
+  weight = 1
+  [[menu.pages]]
+  name = "Copyright"
+  url = "/pages/copyright"
+  weight = 2
+  [[menu.pages]]
+  name = "DMCA"
+  url = "/pages/dmca"
+  weight = 3
+  [[menu.pages]]
+  name = "Privacy Policy"
+  url = "/pages/privacy-policy"
+  weight = 4
+
+[author]
+    name = "Marina"
+    bio = "Bloggerr"
+    image = "https://i.imgur.com/qNQv8nK.jpg"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xHTML = false
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 2
